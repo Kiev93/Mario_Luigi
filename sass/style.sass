@@ -1,0 +1,389 @@
+
+%center
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+h1
+	color: #fff
+	text-align: center
+	margin-top: 2em
+html
+	font:
+		family: sans-serif
+
+	height: 100%
+	width: 100%
+	background-image: linear-gradient(90deg, #494440 10%, #93897D 90%)
+	
+.mario
+	@extend %center
+	margin-top: -1em
+	margin-left: -25%
+
+	.hat-head
+		height: 15em
+		width: 15em
+		background: #E83736
+		border-radius: 40%
+		transform: rotate(42.5deg) skew(0deg, 5deg) scale(0.95, 0.95)
+
+	.hat-logo
+		position: absolute
+		top: 1em
+		left: 50%
+		width: 3.75em
+		height: 3.75em
+		margin-left: -1.875em
+		line-height: 3em
+		text-align: center
+		background: #fff
+		border-radius: 50%
+
+		&:before
+			content: 'M'
+			display: inline-block
+			font-size: 2em
+			font-weight: 700
+			color: #E83736
+
+	.hat-brim
+		position: absolute
+		top: 4.8125em
+		left: 50%
+		height: 12em
+		width: 12em
+		margin-left: -6em
+		border-radius: 50%
+		background: #BD2B2D
+		transform: scale(1,1.1)
+		box-shadow: 0 -1em 0 0 #FA5B59
+
+	.ear
+		position: absolute
+		top: 10.5em
+		height: 4.25em
+		width: 4.25em
+		border-radius: 50%
+		background: linear-gradient(#FFCBBD 30%, #EEA790 30%)
+
+		&.left
+			left: 0
+
+		&.right
+			right: 0
+
+	.head
+		position: absolute
+		top: 5.3125em
+		left: 50%
+		height: 12.25em
+		width: 12.25em
+		margin-left: -6.125em
+		border-radius: 50%
+		border-color: transparent
+		background: #F5B097
+		box-shadow: inset 0 -2.25em 0 #D4917E
+
+	.eyebrow
+		position: absolute
+		top: 0.5em
+		height: 5em
+		width: 3.375em
+		border-radius: 50%
+		background: #343235
+
+		&:before
+			content: ''
+			position: absolute
+			top: 1em
+			height: 100%
+			width: 120%
+			border-radius: 50%
+			background: #F5B097
+
+		&.left
+			left: 2em
+			transform: rotate(-10deg)
+
+			&:before
+				left: -20%
+
+		&.right
+			right: 2em
+			transform: rotate(10deg)
+
+			&:before
+				right: -20%
+
+	.moustache
+		position: absolute
+		top: 6.5em
+		left: 50%
+		height: 2.5em
+		width: 2.5em
+		margin-left: -1.25em
+		border-radius: 50%
+		background: #343235
+		box-shadow: -3.75em -0.5em 0 #343235, 
+		-2.75em 0.75em 0 #343235, 
+		-1.2em 1.5em 0 #343235, 
+		0 0.5em 0 #343235, 
+		1.2em 1.5em 0 #343235, 
+		2.75em 0.75em 0 #343235, 
+		3.75em -0.5em 0 #343235
+
+		&:after
+			content: ''
+			position: absolute
+			top: -3.5em
+			left: 50%
+			height: 5em
+			width: 10em
+			margin-left: -5em
+			border-radius: 50%
+			background: #F5B097
+
+	.eye
+		position: absolute
+		top: 2.375em
+		height: 4em
+		width: 2.5em
+		border-radius: 50%
+		background: linear-gradient(#E6D9D6 50%, #F9ECE8 50%)
+		overflow: hidden
+
+		&:before
+			content: ''
+			position: absolute
+			top: 1.31em
+			height: 2.125em
+			width: 1.31em
+			border-radius: 50%
+			background: #062226
+
+		&.left
+			left: 2.75em
+
+			&:before
+				right: -0.2em
+				transform: rotate(5deg)
+
+		&.right
+			right: 2.75em
+
+			&:before
+				left: -0.2em
+				transform: rotate(-5deg)
+
+	.nose
+		position: absolute
+		top: 4.875em
+		left: 50%
+		height: 4.1em
+		width: 4.75em
+		margin-left: -2.375em
+		border-radius: 50%
+		background: #E46061
+		overflow: hidden
+
+		&:before
+			content: ''
+			position: absolute
+			top: -0.5em
+			left: 50%
+			height: 2.5em
+			width: 4.5em
+			margin-left: -2.25em
+			border-radius: 40%
+			background: #FA5B59	
+
+/////////////////////////////////////////////
+///////////// 		LUIGI 		/////////////
+/////////////////////////////////////////////
+
+.luigi
+	@extend %center
+	transform: translate(-50%, -50%) scale(0.9, 0.9)
+	margin-top: -1em
+	margin-left: 25%
+
+	.hat-head
+		height: 15em
+		width: 15em
+		background: #00A652
+		border-radius: 40%
+		transform: rotate(58deg) skew(22.5deg, -10deg)
+	.hat-logo
+		position: absolute
+		top: -1em
+		left: 50%
+		width: 3.75em
+		height: 3.75em
+		margin-left: -1.875em
+		line-height: 3em
+		text-align: center
+		background: #fff
+		border-radius: 50%
+
+		&:before
+			content: 'L'
+			display: inline-block;
+			font:
+				size: 2em
+				weight: 700
+			color: #008641
+
+	.hat-brim
+		position: absolute
+		top: 2.8125em
+		left: 50%
+		height: 12em
+		width: 12em
+		margin-left: -6em
+		border-radius: 50%
+		background: #008641
+		transform: scale(1,1.1)
+		box-shadow: 0 -1em 0 0 #63BF72
+
+	.ear
+		position: absolute
+		top: 10.5em
+		height: 4.25em
+		width: 4.25em
+		border-radius: 50%
+		background: linear-gradient(#FFCBBD 45%, #EEA790 45%)
+
+		&.left
+			left: 0
+		&.right
+			right: 0
+
+	.head
+		position: absolute
+		top: 3.3125em
+		left: 50%
+		height: 12.25em
+		width: 11.25em
+		margin-left: -5.625em
+		border-radius: 50%
+		border-color: transparent
+		background: #F5B097
+
+		&:before
+			content: ''
+			position: absolute
+			top: 4em
+			left: 50%
+			height: 10em
+			width: 15em
+			margin-left: -7.5em
+			border-radius: 50%
+			background: linear-gradient(122deg, #F5B097 50%, #CF927F 50%)
+			transform: rotate(75deg) skew(20deg, 0deg)
+
+	.eyebrow
+		position: absolute
+		top: 0.25em
+		height: 5em
+		width: 3em
+		border-radius: 50%
+		background: #343235
+
+		&:before
+			content: ''
+			position: absolute
+			top: 1.2em
+			height: 100%
+			width: 120%
+			border-radius: 50%
+			background: #F5B097
+
+		&.left
+			left: 1.75em
+
+			&:before
+				left: 0
+
+		&.right
+			right: 1.75em
+
+			&:before
+				right: 0
+
+	.moustache
+		position: absolute
+		top: 6.5em
+		left: 50%
+		height: 5.5em
+		width: 6em
+		margin-left: -3em
+		border-radius: 50%
+		background: #343235
+		box-shadow: -2.25em 1em 0 #343235,
+		2.25em 1em 0 #343235
+
+		&:after
+			content: ''
+			position: absolute
+			top: -1.5em
+			left: 50%
+			height: 5em
+			width: 10em
+			margin-left: -5em
+			border-radius: 50%
+			background: #F5B097
+
+	.eye
+		position: absolute
+		top: 3em
+		height: 5em
+		width: 2.5em
+		border-radius: 50%
+		background: linear-gradient(#E6D9D6 50%, #F9ECE8 50%)
+		overflow: hidden
+
+		&:before
+			content: ''
+			position: absolute
+			top: 1.75em
+			height: 2.5em
+			width: 1.31em
+			border-radius: 50%
+			background: #062226
+
+		&.left
+			left: 2.25em
+			transform: rotate(2deg)
+
+			&:before
+				right: -0.2em
+
+		&.right
+			right: 2.25em
+			transform: rotate(-2deg)
+
+			&:before
+				left: -0.2em
+
+	.nose
+		position:absolute
+		top: 6.5em
+		left: 50%
+		height: 4.5em
+		width: 4.75em
+		margin-left: -2.375em
+		border-radius: 50%
+		background: #E46061
+		overflow: hidden
+
+		&:before
+			content: ''
+			position: absolute
+			top: -0.5em
+			left: 50%
+			height: 3.5em
+			width: 6em
+			margin-left: -3em
+			border-radius: 40%
+			background: #FA5B59
